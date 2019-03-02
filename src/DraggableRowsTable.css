@@ -1,0 +1,27 @@
+.innerTableClass {
+    margin-left: 1.5vw
+}
+
+.placeHolderRow {
+    padding-bottom: 1vh;
+    background-color: aquamarine;
+}
+
+.tableRow {
+    margin: 1vh;
+    -webkit-transition-duration: 0.7s;
+}
+
+.previewRow {
+    margin-left: 0.6vw;
+    background: darkgrey;
+}
+
+@-webkit-keyframes tableRowEnter {
+    from {
+        -webkit-transform: translateY(0.5vw);
+    }
+    to {
+        -webkit-transform: translateY(0vw);
+    }
+}

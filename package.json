@@ -1,0 +1,38 @@
+{
+  "name": "react-draggable-rows-table",
+  "version": "0.0.1-alpha",
+  "description": "draggable tree table based on react-table component",
+  "main": "TO_CHANGE",
+  "scripts": {
+    "test": "undefined",
+    "storybook": "start-storybook -p 9001 -c storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofekby/react-draggable-rows-table.git"
+  },
+  "keywords": [
+    "react-table",
+    "draggable",
+    "dnd",
+    "draggable-rows"
+  ],
+  "author": "Ofek Ben-Yaish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ofekby/react-draggable-rows-table/issues"
+  },
+  "homepage": "https://github.com/ofekby/react-draggable-rows-table#readme",
+  "dependencies": {
+    "fast-deep-equal": "2.0.1",
+    "lodash": "^4.17.11",
+    "react": "^15.5.0",
+    "react-dom": "^15.5.0",
+    "react-table": "6.9.2"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.4.11",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5"
+  }
+}
