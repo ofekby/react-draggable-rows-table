@@ -116,7 +116,7 @@ class RawDraggableRowsTable extends Component {
                            getTrProps={this.getTrProps}
                            getTdProps={this.getTdProps}
                            minRows
-                           expanded={expanded}
+                           expanded={filterExpandedByIndex(data, expanded)}
                            onExpandedChange={expanded => this.setState({expanded})}
                            SubComponent={({original}) => original.children ?
                                <div className='innerTableClass'>
@@ -125,5 +125,15 @@ class RawDraggableRowsTable extends Component {
                                </div> : null}/>
     }
 }
+
+const filterExpandedByIndex = (dataList, expanded) => {
+    const newExpanded = {};
+
+    Object.keys(expanded).filter(expandedIndex => !!expanded[expandedIndex] && !dataList[expandedIndex].isPreviewRow).forEach(index => {
+       newExpanded[index] = true;
+    });
+
+    return newExpanded;
+};
 
 export default RawDraggableRowsTable;

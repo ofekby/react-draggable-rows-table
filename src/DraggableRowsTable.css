@@ -3,7 +3,8 @@
 }
 
 .placeHolderRow {
-    padding-bottom: 1vh;
+    padding-bottom: 0.5vh;
+    padding-top: 0.5vh;
     background-color: aquamarine;
 }
 
